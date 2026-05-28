@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="합정 외식업 창업 전문 블로그. 뜨는 프랜차이즈 분석, 상권 데이터 기반 매장 구축 전략. 강력한 스트리트 브루탈리즘 디자인으로 신뢰와 혁신을 전달합니다. 상담 전화 010-6279-0862">
+<meta name="keywords" content="합정 외식업 창업, 뜨는 프랜차이즈, 외식창업, 프랜차이즈 창업, 상권 분석, 매장 구축, 블로그, 2025 트렌드">
+<meta name="bpaas-design-system" content="brutalist-avantgarde">
+<meta name="bpaas-design-theme" content="kr-neon-void">
+<meta property="og:title" content="블로그 — 합정 외식창업 전문 | 뜨는 프랜차이즈 전략">
+<meta property="og:description" content="합정 외식업 창업 전문 블로그. 뜨는 프랜차이즈 분석, 상권 데이터 기반 매장 구축 전략. 강력한 스트리트 브루탈리즘 디자인으로 신뢰와 혁신을 전달합니다. 상담 전화 010-6279-0862">
+<meta property="og:type" content="website">
+<title>블로그 — 합정 외식창업 전문 | 뜨는 프랜차이즈 전략</title>
+<style>
+/* ===== CSS RESET & BASE ===== */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { font-size:16px; scroll-behavior:smooth; }
+body { font-family:'Pretendard', 'Noto Sans KR', system-ui, sans-serif; background:#0a0a0a; color:#e0e0e0; line-height:1.7; }
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4 { font-weight:900; letter-spacing:-0.02em; text-transform:uppercase; }
+h1 { font-size:3.5rem; line-height:1.1; color:#fff; }
+h2 { font-size:2.5rem; line-height:1.2; color:#f0f0f0; }
+h3 { font-size:1.75rem; line-height:1.3; color:#ccc; }
+p, li, .text-body { font-size:1.0625rem; color:#b0b0b0; max-width:70ch; }
+a { color:#ff3b30; text-decoration:none; border-bottom:2px solid transparent; transition:border-color 0.2s; }
+a:hover { border-bottom-color:#ff3b30; }
+
+/* ===== CONTAINER / SPACE ===== */
+.container { max-width:1280px; margin:0 auto; padding:0 2rem; }
+section, header { padding:6rem 0; }
+
+/* ===== HEADER / NAV ===== */
+header { background:#0a0a0a; border-bottom:3px solid #ff3b30; position:sticky; top:0; z-index:100; }
+nav { display:flex; justify-content:space-between; align-items:center; padding:1.5rem 2rem; max-width:1280px; margin:0 auto; }
+.nav-links { display:flex; gap:2rem; list-style:none; }
+.nav-links a { font-weight:700; font-size:1.125rem; text-transform:uppercase; border-bottom:none; position:relative; }
+.nav-links a::after { content:''; display:block; width:0; height:2px; background:#ff3b30; transition:width 0.3s; }
+.nav-links a:hover::after { width:100%; }
+.hamburger { display:none; flex-direction:column; cursor:pointer; gap:5px; }
+.hamburger span { width:28px; height:3px; background:#fff; }
+
+/* ===== HERO (블로그 전용) ===== */
+.hero { background:linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%); position:relative; overflow:hidden; border-bottom:3px solid #ff3b30; }
+.hero::before { content:''; position:absolute; top:-50%; left:-30%; width:80%; height:200%; background:radial-gradient(circle at 30% 40%, rgba(255,59,48,0.08) 0%, transparent 60%); pointer-events:none; }
+.hero .container { position:relative; z-index:1; }
+.hero h1 { margin-bottom:1rem; text-shadow:0 0 40px rgba(255,59,48,0.3); }
+.hero p { font-size:1.25rem; color:#c0c0c0; max-width:60ch; }
+
+/* ===== BLOG POST ===== */
+.blog-post { background:#111; border:1px solid #2a2a2a; padding:3rem; margin:2rem 0; }
+.blog-post h2 { margin-bottom:1.5rem; border-left:5px solid #ff3b30; padding-left:1rem; }
+.blog-post h3 { margin-top:2.5rem; margin-bottom:1rem; color:#e0e0e0; }
+.blog-post p { margin-bottom:1.25rem; font-size:1.1rem; }
+.blog-post blockquote { border-left:4px solid #ff3b30; padding:1.5rem 2rem; margin:2rem 0; background:#1a1a1a; font-style:italic; color:#d0d0d0; }
+.blog-post .data-point { display:flex; gap:1.5rem; align-items:center; background:#0f0f0f; padding:1.5rem; margin:2rem 0; border:1px solid #2a2a2a; }
+.blog-post .data-point .number { font-size:3rem; font-weight:900; color:#ff3b30; line-height:1; }
+.blog-post .data-point .desc { flex:1; }
+.blog-post .data-point .desc p { margin:0; }
+.blog-post ul, .blog-post ol { margin:1.5rem 0 1.5rem 2rem; color:#b0b0b0; font-size:1.0625rem; }
+.blog-post li { margin-bottom:0.5rem; }
+.blog-post img { width:100%; height:auto; margin:2rem 0; border:1px solid #2a2a2a; }
+.blog-post .cta-box { background:linear-gradient(135deg, #1a1a1a, #111); border:2px solid #ff3b30; padding:2.5rem; text-align:center; margin:3rem 0; }
+.blog-post .cta-box p { font-size:1.25rem; margin-bottom:1.5rem; text-align:center; }
+.blog-post .cta-box a.cta-btn { display:inline-block; background:#ff3b30; color:#0a0a0a; font-weight:900; padding:1rem 3rem; text-transform:uppercase; border:none; font-size:1.125rem; transition:all 0.2s; letter-spacing:1px; }
+.blog-post .cta-box a.cta-btn:hover { background:#fff; color:#0a0a0a; transform:scale(1.02); }
+
+/* ===== FOOTER ===== */
+footer { background:#0a0a0a; border-top:3px solid #ff3b30; padding:3rem 0; text-align:center; }
+footer p { font-size:0.9375rem; color:#888; }
+
+/* ===== RESPONSIVE 768 ===== */
+@media (max-width:768px) {
+    .hamburger { display:flex; }
+    .nav-links { display:none; flex-direction:column; background:#0a0a0a; position:absolute; top:100%; left:0; width:100%; padding:1rem 2rem; border-bottom:3px solid #ff3b30; }
+    .nav-links.active { display:flex; }
+    .nav-links a { padding:0.75rem 0; }
+    h1 { font-size:2.5rem; }
+    h2 { font-size:2rem; }
+    .container { padding:0 1.5rem; }
+    section, header { padding:3rem 0; }
+    .blog-post { padding:2rem; }
+    .blog-post .data-point { flex-direction:column; text-align:center; }
+    .hero p { font-size:1.0625rem; }
+}
+
+/* ===== HAMBURGER TOGGLE (js) ===== */
+.nav-links.active ~ .hamburger span:nth-child(1) { transform:rotate(45deg) translate(5px, 5px); }
+.nav-links.active ~ .hamburger span:nth-child(2) { opacity:0; }
+.nav-links.active ~ .hamburger span:nth-child(3) { transform:rotate(-45deg) translate(5px, -5px); }
+</style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="/" style="font-weight:900; font-size:1.5rem; color:#fff; border:none; text-transform:uppercase; letter-spacing:-1px;">합정<span style="color:#ff3b30;">F&B</span></a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="/">홈</a></li>
+            <li><a href="/service">서비스</a></li>
+            <li><a href="/analysis">상권분석</a></li>
+            <li><a href="/franchise">프랜차이즈</a></li>
+            <li><a href="/blog" style="color:#ff3b30;">블로그</a></li>
+            <li><a href="/contact">문의</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" role="button" aria-label="메뉴 열기" tabindex="0">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>블로그</h1>
+        <p>합정 외식업 창업을 위한 데이터 기반 인사이트. 뜨는 프랜차이즈 트렌드, 상권 분석, 매장 구축 전략을 권위 있는 시각으로 전달합니다.</p>
+    </div>
+</section>
+
+<main class="container">
+    <article class="blog-post">
+        <h2>합정에서 뜨는 프랜차이즈 외식창업, 2025년 데이터 기반 분석</h2>
+        <p><strong>작성자:</strong> 합정F&B 전략연구소 | <strong>발행일:</strong> 2025-03-15</p>
+        <img src="https://placehold.co/1200x600/1a1a1a/ff3b30?text=합정+외식+상권+데이터" alt="합정 상권 데이터 시각화 그래프와 매장 전경" loading="lazy">
+
+        <p>합정동은 서울 서남권 외식업의 새로운 핵심 거점으로 부상하고 있습니다. 2025년 1월 기준 합정역 반경 1km 내 외식업 매출은 전년 동기 대비 <strong>12.4%</strong> 증가했으며, 특히 2030 세대의 유동 인구가 전체 방문자의 <strong>67%</strong>를 차지합니다. 이는 프랜차이즈 창업자에게 매력적인 환경을 제공합니다.</p>
+
+        <div class="data-point">
+            <div class="number">12.4%</div>
+            <div class="desc">
+                <p>합정 상권 외식업 매출 전년 대비 증가율 (2025 Q1 기준)</p>
+            </div>
+        </div>
+
+        <h3>1. 뜨는 프랜차이즈 3대 트렌드</h3>
+        <p>데이터에 기반하여 2025년 합정에서 주목해야 할 프랜차이즈 유형을 선정했습니다. 첫째, <strong>고단백·건식 카테고리</strong>입니다. 합정 지역 헬스·필라테스 시설이 3년간 2.5배 증가하면서 관련 수요가 폭발적으로 늘었습니다. 둘째, <strong>스페셜티 커피+디저트</strong> 복합 모델입니다. 카페 업종은 여전히 높은 경쟁률을 보이지만, 디저트를 포함한 복합 매장의 객단가는 단일 카페 대비 <strong>42%</strong> 높습니다. 셋째, <strong>야식·안주 중심 배달 최적화 프랜차이즈</strong>입니다. 합정은 주거와 상업이 혼합된 지역 특성상 오후 9시 이후 주문 건수가 오전 시간 대비 <strong>3배</strong> 많습니다.</p>
+
+        <blockquote>
+            “합정 상권의 핵심은 '낮에는 직장인, 밤에는 지역 주민'이라는 이중 수요 구조입니다. 이 흐름을 간파한 프랜차이즈가 성공 확률을 높입니다.” — 합정F&B 전략연구소
+        </blockquote>
+
+        <h3>2. 상권 데이터로 본 최적 입지</h3>
+        <p>합정역 1번·2번 출구 인근은 유동 인구 밀도가 가장 높지만, 임대료도 평균 <strong>3.3㎡ 당 월 25만 원</strong>으로 부담이 큽니다. 반면 4번·5번 출구 방면으로 200m 이내에 위치한 이면도로는 임대료가 절반 수준이면서도 유동 인구의 <strong>23%</strong>가 통행하는 것으로 분석되었습니다. 2025년 2월 기준 해당 구역 내 신규 음식점 개업률은 전년 대비 <strong>8.1%p</strong> 상승했습니다. 초기 비용을 절감하면서도 충분한 고객 접근성을 확보하려면 이와 같은 '세컨
+</body>
+</html>
