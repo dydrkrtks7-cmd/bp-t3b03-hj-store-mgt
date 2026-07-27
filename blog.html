@@ -1,143 +1,89 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="합정 외식업 창업 전문 블로그. 뜨는 프랜차이즈 분석, 상권 데이터 기반 매장 구축 전략. 강력한 스트리트 브루탈리즘 디자인으로 신뢰와 혁신을 전달합니다. 상담 전화 010-6279-0862">
-<meta name="keywords" content="합정 외식업 창업, 뜨는 프랜차이즈, 외식창업, 프랜차이즈 창업, 상권 분석, 매장 구축, 블로그, 2025 트렌드">
-<meta name="bpaas-design-system" content="brutalist-avantgarde">
-<meta name="bpaas-design-theme" content="kr-neon-void">
-<meta property="og:title" content="블로그 — 합정 외식창업 전문 | 뜨는 프랜차이즈 전략">
-<meta property="og:description" content="합정 외식업 창업 전문 블로그. 뜨는 프랜차이즈 분석, 상권 데이터 기반 매장 구축 전략. 강력한 스트리트 브루탈리즘 디자인으로 신뢰와 혁신을 전달합니다. 상담 전화 010-6279-0862">
-<meta property="og:type" content="website">
-<title>블로그 — 합정 외식창업 전문 | 뜨는 프랜차이즈 전략</title>
-<style>
-/* ===== CSS RESET & BASE ===== */
-*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-html { font-size:16px; scroll-behavior:smooth; }
-body { font-family:'Pretendard', 'Noto Sans KR', system-ui, sans-serif; background:#0a0a0a; color:#e0e0e0; line-height:1.7; }
-
-/* ===== TYPOGRAPHY ===== */
-h1, h2, h3, h4 { font-weight:900; letter-spacing:-0.02em; text-transform:uppercase; }
-h1 { font-size:3.5rem; line-height:1.1; color:#fff; }
-h2 { font-size:2.5rem; line-height:1.2; color:#f0f0f0; }
-h3 { font-size:1.75rem; line-height:1.3; color:#ccc; }
-p, li, .text-body { font-size:1.0625rem; color:#b0b0b0; max-width:70ch; }
-a { color:#ff3b30; text-decoration:none; border-bottom:2px solid transparent; transition:border-color 0.2s; }
-a:hover { border-bottom-color:#ff3b30; }
-
-/* ===== CONTAINER / SPACE ===== */
-.container { max-width:1280px; margin:0 auto; padding:0 2rem; }
-section, header { padding:6rem 0; }
-
-/* ===== HEADER / NAV ===== */
-header { background:#0a0a0a; border-bottom:3px solid #ff3b30; position:sticky; top:0; z-index:100; }
-nav { display:flex; justify-content:space-between; align-items:center; padding:1.5rem 2rem; max-width:1280px; margin:0 auto; }
-.nav-links { display:flex; gap:2rem; list-style:none; }
-.nav-links a { font-weight:700; font-size:1.125rem; text-transform:uppercase; border-bottom:none; position:relative; }
-.nav-links a::after { content:''; display:block; width:0; height:2px; background:#ff3b30; transition:width 0.3s; }
-.nav-links a:hover::after { width:100%; }
-.hamburger { display:none; flex-direction:column; cursor:pointer; gap:5px; }
-.hamburger span { width:28px; height:3px; background:#fff; }
-
-/* ===== HERO (블로그 전용) ===== */
-.hero { background:linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%); position:relative; overflow:hidden; border-bottom:3px solid #ff3b30; }
-.hero::before { content:''; position:absolute; top:-50%; left:-30%; width:80%; height:200%; background:radial-gradient(circle at 30% 40%, rgba(255,59,48,0.08) 0%, transparent 60%); pointer-events:none; }
-.hero .container { position:relative; z-index:1; }
-.hero h1 { margin-bottom:1rem; text-shadow:0 0 40px rgba(255,59,48,0.3); }
-.hero p { font-size:1.25rem; color:#c0c0c0; max-width:60ch; }
-
-/* ===== BLOG POST ===== */
-.blog-post { background:#111; border:1px solid #2a2a2a; padding:3rem; margin:2rem 0; }
-.blog-post h2 { margin-bottom:1.5rem; border-left:5px solid #ff3b30; padding-left:1rem; }
-.blog-post h3 { margin-top:2.5rem; margin-bottom:1rem; color:#e0e0e0; }
-.blog-post p { margin-bottom:1.25rem; font-size:1.1rem; }
-.blog-post blockquote { border-left:4px solid #ff3b30; padding:1.5rem 2rem; margin:2rem 0; background:#1a1a1a; font-style:italic; color:#d0d0d0; }
-.blog-post .data-point { display:flex; gap:1.5rem; align-items:center; background:#0f0f0f; padding:1.5rem; margin:2rem 0; border:1px solid #2a2a2a; }
-.blog-post .data-point .number { font-size:3rem; font-weight:900; color:#ff3b30; line-height:1; }
-.blog-post .data-point .desc { flex:1; }
-.blog-post .data-point .desc p { margin:0; }
-.blog-post ul, .blog-post ol { margin:1.5rem 0 1.5rem 2rem; color:#b0b0b0; font-size:1.0625rem; }
-.blog-post li { margin-bottom:0.5rem; }
-.blog-post img { width:100%; height:auto; margin:2rem 0; border:1px solid #2a2a2a; }
-.blog-post .cta-box { background:linear-gradient(135deg, #1a1a1a, #111); border:2px solid #ff3b30; padding:2.5rem; text-align:center; margin:3rem 0; }
-.blog-post .cta-box p { font-size:1.25rem; margin-bottom:1.5rem; text-align:center; }
-.blog-post .cta-box a.cta-btn { display:inline-block; background:#ff3b30; color:#0a0a0a; font-weight:900; padding:1rem 3rem; text-transform:uppercase; border:none; font-size:1.125rem; transition:all 0.2s; letter-spacing:1px; }
-.blog-post .cta-box a.cta-btn:hover { background:#fff; color:#0a0a0a; transform:scale(1.02); }
-
-/* ===== FOOTER ===== */
-footer { background:#0a0a0a; border-top:3px solid #ff3b30; padding:3rem 0; text-align:center; }
-footer p { font-size:0.9375rem; color:#888; }
-
-/* ===== RESPONSIVE 768 ===== */
-@media (max-width:768px) {
-    .hamburger { display:flex; }
-    .nav-links { display:none; flex-direction:column; background:#0a0a0a; position:absolute; top:100%; left:0; width:100%; padding:1rem 2rem; border-bottom:3px solid #ff3b30; }
-    .nav-links.active { display:flex; }
-    .nav-links a { padding:0.75rem 0; }
-    h1 { font-size:2.5rem; }
-    h2 { font-size:2rem; }
-    .container { padding:0 1.5rem; }
-    section, header { padding:3rem 0; }
-    .blog-post { padding:2rem; }
-    .blog-post .data-point { flex-direction:column; text-align:center; }
-    .hero p { font-size:1.0625rem; }
-}
-
-/* ===== HAMBURGER TOGGLE (js) ===== */
-.nav-links.active ~ .hamburger span:nth-child(1) { transform:rotate(45deg) translate(5px, 5px); }
-.nav-links.active ~ .hamburger span:nth-child(2) { opacity:0; }
-.nav-links.active ~ .hamburger span:nth-child(3) { transform:rotate(-45deg) translate(5px, -5px); }
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>블로그 | 뜨는 프랜차이즈 — 합정 외식업창업 가이드</title>
+  <meta name="description" content="합정에서 뜨는 프랜차이즈를 선택하려는 창업자를 위한 심층 가이드. 표현 차이, 확인 누락, 기록 관리 등 실제 현장에서 마주치는 문제와 해결 방안을 제시합니다.">
+  <meta name="keywords" content="뜨는 프랜차이즈, 합정 외식업 창업, 프랜차이즈 선택, 창업 체크리스트, 외식업 창업 가이드">
+  <link rel="canonical" href="https://hapjeong-startup-business.namanavi.com/blog.html">
+  <meta property="og:title" content="뜨는 프랜차이즈 — 합정 외식업창업 가이드">
+  <meta property="og:description" content="합정에서 뜨는 프랜차이즈를 선택하려는 창업자를 위한 심층 가이드.">
+  <meta property="og:url" content="https://hapjeong-startup-business.namanavi.com/blog.html">
+  <!-- CSS는 기존 디자인 시스템을 그대로 사용 -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <nav>
-        <a href="/" style="font-weight:900; font-size:1.5rem; color:#fff; border:none; text-transform:uppercase; letter-spacing:-1px;">합정<span style="color:#ff3b30;">F&B</span></a>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="/">홈</a></li>
-            <li><a href="/service">서비스</a></li>
-            <li><a href="/analysis">상권분석</a></li>
-            <li><a href="/franchise">프랜차이즈</a></li>
-            <li><a href="/blog" style="color:#ff3b30;">블로그</a></li>
-            <li><a href="/contact">문의</a></li>
-        </ul>
-        <div class="hamburger" id="hamburger" role="button" aria-label="메뉴 열기" tabindex="0">
-            <span></span><span></span><span></span>
-        </div>
+  <!-- 네비게이션 (전체 페이지 공통) -->
+  <nav class="k-wrap-0ccb">
+    <ul class="nav-present">
+      <li><a href="/home">홈</a></li>
+      <li><a href="/guide">가이드</a></li>
+      <li><a href="/blog" class="active">블로그</a></li>
+      <li><a href="/contact">문의</a></li>
+    </ul>
+    <button class="hamburger-menu" aria-label="메뉴 열기"></button>
+  </nav>
+
+  <!-- 메인 컨테이너 -->
+  <div class="v-box-jy8j">
+    <h1>합정 외식업 창업, 뜨는 프랜차이즈를 파헤치는 블로그</h1>
+
+    <!-- 섹션 1: 시장 현황 -->
+    <section class="n-grid-yyse">
+      <h2>1. 현재 합정 외식 시장의 흐름</h2>
+      <p>합정은 2020년대 이후 문화와 트렌드가 급속히 변하는 공간으로, 젊은 층과 외국인 방문객이 늘어나면서 외식업의 경쟁이 격화되고 있다. 특히 ‘핵심가치와 스토리’를 강조하는 프랜차이즈가 눈에 띄며, 일반적인 패스트푸드보다 차별화된 메뉴와 분위기를 제공한다.</p>
+      <p>최근 1년간 신규 오픈 매장의 월 평균 성장률은 12%에 달했으며, 이는 전통적인 거리 음식점의 성장률보다 현저히 높은 수치다. 이러한 현상은 소비자들이 ‘새로운 경험’을 추구하고, SNS에서 즉시 공유 가능한 비주얼을 중시하는 경향이 반영된 결과다.</p>
+    </section>
+
+    <!-- 섹션 2: 프랜차이즈 선택 시 반드시 검토해야 할 5가지 기준 -->
+    <section class="n-grid-yyse">
+      <h2>2. 프랜차이즈 선정 체크리스트</h2>
+      <p><strong>① 브랜드 인지도와 성장 가능성</strong> – 브랜드가 이미 전국적인 인지도를 가지고 있느냐, 그리고 향후 3~5년 내에 매출 성장 목표가 현실적인지 확인한다. 매출 추이와 신규 가맹점 확대 속도를 분석하는 것이 핵심이다.</p>
+      <p><strong>② 초기 투자 비용과 수익 회수 기간</strong> – 가맹비, 시설 투자, 초기 마케팅 비용 등을 모두 합산한 총 투자액과 평균적인 손익분기점을 비교한다. 손익분기점이 12개월 이내에 도달한다면 리스크가 낮다.</p>
+      <p><strong>③ 운영 지원 체계</strong> – 본사의 교육 프로그램, 마케팅 지원, 물류 공급망, 가맹점 관리 시스템이 얼마나 체계적인지 확인한다. 특히 합정처럼 경쟁이 치열한 지역에서는 현장 코디네이터의 현장 지원이 중요하다.</p>
+      <p><strong>④ 메뉴 차별성 및 현지화 가능성</strong> – 타 프랜차이즈와 차별화된 메뉴 라인업을 가지고 있는가, 그리고 지역 특성에 맞게 메뉴를 커스터마이즈 할 수 있는 여지가 있는가를 검토한다.</p>
+      <p><strong>⑤ 계약 조건과 법적 검토</strong> – 가맹 계약서에 포함된 독점권, 영업 범위, 계약 해지 조항 등을 변호사와 함께 점검한다. 특히 합정처럼 소규모 상권에서는 계약 조항이 사업 지속성에 큰 영향을 미친다.</p>
+    </section>
+
+    <!-- 섹션 3: 성공적인 가맹점 운영을 위한 실전 전략 -->
+    <section class="n-grid-yyse">
+      <h2>3. 가맹점 운영 시 실천해야 할 전략</h2>
+      <p>첫 번째 전략은 ‘지역 맞춤 마케팅’이다. 합정 내 주요 대학, 문화센터, 그리고 주거 단지를 대상으로 SNS 광고와 오프라인 이벤트를 연계해 브랜드 인지도를 급속히 높일 수 있다. 특히 인스타그램 스토리와 틱톡 챌린지를 활용하면 젊은 고객층을 효과적으로 유입시킨다.</p>
+      <p>두 번째 전략은 ‘데이터 기반 재고 관리’이다. POS 시스템을 통해 실시간 판매 데이터를 분석하고, 인기 메뉴와 비인기 메뉴를 구분해 재고 회전율을 최적화한다. 이는 원가 절감과 동시에 고객 만족도를 높이는 핵심 포인트다.</p>
+      <p>세 번째 전략은 ‘고객 경험 설계’다. 매장 내 분위기, 직원 서비스 매뉴얼, 주문·결제 흐름을 일관되게 설계해 고객이 재방문하고 싶도록 만든다. 특히 ‘테이크아웃’과 ‘배달’ 서비스를 병행하면 매출 다변화에 큰 도움이 된다.</p>
+    </section>
+
+    <!-- 섹션 4: FAQ -->
+    <section class="n-grid-yyse">
+      <h2>4. 자주 묻는 질문</h2>
+      <dl>
+        <dt>Q1. 합정에서 프랜차이즈 매장을 열 때 필요한 허가는 무엇인가요?</dt>
+        <dd>A1. 사업자 등록증, 음식점 영업 허가증, 그리고 지역별 위생·소방 인증이 필요합니다. 각 단계마다 관할 구청에 신청하고, 현장 실사 후 최종 허가를 받아야 합니다.</dd>
+        <dt>Q2. 가맹비와 로열티는 언제 납부하나요?</dt>
+        <dd>A2. 가맹비는 계약 체결 시 일시 지급하고, 로열티는 매출 발생분에 대해 월말에 정산합니다. 일부 브랜드는 매출 실적에 따라 차등 로열티율을 적용하기도 합니다.</dd>
+        <dt>Q3. 초기 6개월 동안 매출이 기대에 못 미치면 어떻게 해야 하나요?</dt>
+        <dd>A3. 본사의 마케팅 지원을 재검토하고, 지역 특성을 반영한 프로모션을 추가로 진행합니다. 동시에 매장 운영 데이터를 분석해 메뉴 라인업을 조정하거나 인력 배치를 최적화합니다.</dd>
+      </dl>
+    </section>
+
+    <!-- 섹션 5: 마무리 및 다음 단계 안내 -->
+    <section class="n-grid-yyse">
+      <h2>5. 마무리와 다음 단계</h2>
+      <p>합정이라는 독특한 입지를 활용해 성공적인 외식업 창업을 이루려면, ‘데이터 기반 의사결정’과 ‘현지 맞춤 마케팅’이 필수 요소다. 위 체크리스트와 운영 전략을 토대로 후보 프랜차이즈를 3~5개 정도 선정하고, 직접 현장 방문·시뮬레이션을 진행해 보라.</p>
+      <p>다음 단계에서는 각 브랜드의 본사 담당자와 상세 상담을 예약하고, 계약 전 최종 법률 검토를 진행한다. 이러한 과정을 체계적으로 밟는다 해도, 언제든 시장 변동에 대비해 유연하게 대응할 수 있는 마인드를 유지하는 것이 장기적인 성공을 보장한다.</p>
+      <a href="/contact" class="v-btn-jedg">상담 예약하기</a>
+    </section>
+  </div>
+
+  <!-- 푸터 -->
+  <footer class="k-wrap-0ccb">
+    <p>&copy; 2026 Namanavi. All rights reserved.</p>
+    <nav class="nav-present">
+      <a href="/privacy">개인정보 처리방침</a> |
+      <a href="/terms">이용약관</a>
     </nav>
-</header>
-
-<section class="hero">
-    <div class="container">
-        <h1>블로그</h1>
-        <p>합정 외식업 창업을 위한 데이터 기반 인사이트. 뜨는 프랜차이즈 트렌드, 상권 분석, 매장 구축 전략을 권위 있는 시각으로 전달합니다.</p>
-    </div>
-</section>
-
-<main class="container">
-    <article class="blog-post">
-        <h2>합정에서 뜨는 프랜차이즈 외식창업, 2025년 데이터 기반 분석</h2>
-        <p><strong>작성자:</strong> 합정F&B 전략연구소 | <strong>발행일:</strong> 2025-03-15</p>
-        <img src="https://placehold.co/1200x600/1a1a1a/ff3b30?text=합정+외식+상권+데이터" alt="합정 상권 데이터 시각화 그래프와 매장 전경" loading="lazy">
-
-        <p>합정동은 서울 서남권 외식업의 새로운 핵심 거점으로 부상하고 있습니다. 2025년 1월 기준 합정역 반경 1km 내 외식업 매출은 전년 동기 대비 <strong>12.4%</strong> 증가했으며, 특히 2030 세대의 유동 인구가 전체 방문자의 <strong>67%</strong>를 차지합니다. 이는 프랜차이즈 창업자에게 매력적인 환경을 제공합니다.</p>
-
-        <div class="data-point">
-            <div class="number">12.4%</div>
-            <div class="desc">
-                <p>합정 상권 외식업 매출 전년 대비 증가율 (2025 Q1 기준)</p>
-            </div>
-        </div>
-
-        <h3>1. 뜨는 프랜차이즈 3대 트렌드</h3>
-        <p>데이터에 기반하여 2025년 합정에서 주목해야 할 프랜차이즈 유형을 선정했습니다. 첫째, <strong>고단백·건식 카테고리</strong>입니다. 합정 지역 헬스·필라테스 시설이 3년간 2.5배 증가하면서 관련 수요가 폭발적으로 늘었습니다. 둘째, <strong>스페셜티 커피+디저트</strong> 복합 모델입니다. 카페 업종은 여전히 높은 경쟁률을 보이지만, 디저트를 포함한 복합 매장의 객단가는 단일 카페 대비 <strong>42%</strong> 높습니다. 셋째, <strong>야식·안주 중심 배달 최적화 프랜차이즈</strong>입니다. 합정은 주거와 상업이 혼합된 지역 특성상 오후 9시 이후 주문 건수가 오전 시간 대비 <strong>3배</strong> 많습니다.</p>
-
-        <blockquote>
-            “합정 상권의 핵심은 '낮에는 직장인, 밤에는 지역 주민'이라는 이중 수요 구조입니다. 이 흐름을 간파한 프랜차이즈가 성공 확률을 높입니다.” — 합정F&B 전략연구소
-        </blockquote>
-
-        <h3>2. 상권 데이터로 본 최적 입지</h3>
-        <p>합정역 1번·2번 출구 인근은 유동 인구 밀도가 가장 높지만, 임대료도 평균 <strong>3.3㎡ 당 월 25만 원</strong>으로 부담이 큽니다. 반면 4번·5번 출구 방면으로 200m 이내에 위치한 이면도로는 임대료가 절반 수준이면서도 유동 인구의 <strong>23%</strong>가 통행하는 것으로 분석되었습니다. 2025년 2월 기준 해당 구역 내 신규 음식점 개업률은 전년 대비 <strong>8.1%p</strong> 상승했습니다. 초기 비용을 절감하면서도 충분한 고객 접근성을 확보하려면 이와 같은 '세컨
+  </footer>
 </body>
 </html>
